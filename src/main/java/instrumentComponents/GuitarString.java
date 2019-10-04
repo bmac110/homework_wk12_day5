@@ -15,6 +15,6 @@ public class GuitarString implements ISell {
     }
 
     public double calculateMarkup() {
-        return basePrice * 0.5;
+        return retailPrice - basePrice;
     }
 }

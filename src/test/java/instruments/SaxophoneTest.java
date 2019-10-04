@@ -12,11 +12,16 @@ public class SaxophoneTest {
     @Before
     public void before(){
         saxophone = new Saxophone("Very High", SaxophoneType.TENOR
-                , "brass", "woodwind", "Gold", 200);
+                , "brass", "woodwind", "Gold", 100, 200);
     }
 
     @Test
     public void hasSaxophoneType(){
         assertEquals(SaxophoneType.TENOR, saxophone.getSaxophoneType());
+    }
+
+    @Test
+    public void hasMarkupPrice(){
+        assertEquals(100, saxophone.calculateMarkup(), 0.01);
     }
 }

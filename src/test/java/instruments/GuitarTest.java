@@ -11,8 +11,8 @@ public class GuitarTest {
 
     @Before
     public void before(){
-        guitar = new Guitar(4, GuitarType.BASS, "concrete"
-                , "Guitar", "black", 200);
+        guitar = new Guitar(4, GuitarType.BASS, "concrete",
+                "Guitar", "black", 115, 200);
     }
 
     @Test
@@ -41,7 +41,7 @@ public class GuitarTest {
     }
 
     @Test
-    public void hasPrice(){
-        assertEquals(200, guitar.getPrice());
+    public void hasMarkupPrice(){
+        assertEquals(85, guitar.calculateMarkup(), 0.01);
     }
 }
