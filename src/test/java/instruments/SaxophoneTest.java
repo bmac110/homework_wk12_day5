@@ -12,7 +12,7 @@ public class SaxophoneTest {
     @Before
     public void before(){
         saxophone = new Saxophone("Very High", SaxophoneType.TENOR
-                , "brass", "woodwind", "Gold", 100, 200);
+                , "brass", "woodwind", "Gold", 100, 200, "phwee");
     }
 
     @Test

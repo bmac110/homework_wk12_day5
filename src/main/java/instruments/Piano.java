@@ -5,8 +5,8 @@ public class Piano extends Instrument{
     private PianoType pianoType;
 
 
-    public Piano(PianoType pianoType, String material, String type, String colour, int basePrice, int retailPrice){
-        super(material, type, colour, basePrice, retailPrice);
+    public Piano(PianoType pianoType, String material, String type, String colour, int basePrice, int retailPrice, String sound){
+        super(material, type, colour, basePrice, retailPrice, sound);
         this.pianoType = pianoType;
     }
 

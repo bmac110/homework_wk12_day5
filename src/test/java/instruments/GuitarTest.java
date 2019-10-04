@@ -12,7 +12,7 @@ public class GuitarTest {
     @Before
     public void before(){
         guitar = new Guitar(4, GuitarType.BASS, "concrete",
-                "Guitar", "black", 115, 200);
+                "Guitar", "black", 115, 200, "bring");
     }
 
     @Test
@@ -43,5 +43,10 @@ public class GuitarTest {
     @Test
     public void hasMarkupPrice(){
         assertEquals(85, guitar.calculateMarkup(), 0.01);
+    }
+
+    @Test
+    public void canMakeSound(){
+        assertEquals("bring", guitar.play("bring"));
     }
 }

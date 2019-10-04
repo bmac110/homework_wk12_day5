@@ -6,8 +6,8 @@ public class Saxophone extends Instrument{
     private SaxophoneType saxophoneType;
 
     public Saxophone(String saxophoniness, SaxophoneType saxophoneType, String material,
-                     String type, String colour, int basePrice, int retailPrice){
-        super(material, type, colour, basePrice, retailPrice);
+                     String type, String colour, int basePrice, int retailPrice, String sound){
+        super(material, type, colour, basePrice, retailPrice, sound);
         this.saxophoniness = saxophoniness;
         this.saxophoneType = saxophoneType;
     }
@@ -21,7 +21,7 @@ public class Saxophone extends Instrument{
     }
 
     public String play(String sound) {
-        return null;
+        return sound;
     }
 
     public double calculateMarkup() {

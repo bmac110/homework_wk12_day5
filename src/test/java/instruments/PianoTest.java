@@ -12,7 +12,7 @@ public class PianoTest {
     @Before
     public void before(){
         piano = new Piano(PianoType.GRAND, "concrete",
-                "Piano", "black", 200, 400);
+                "Piano", "black", 200, 400, "ping");
     }
 
     @Test

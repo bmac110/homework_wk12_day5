@@ -10,13 +10,15 @@ public abstract class Instrument implements IPlay, ISell {
     private String colour;
     private int basePrice;
     private int retailPrice;
+    private String sound;
 
-    public Instrument(String material, String type, String colour, int basePrice, int retailPrice){
+    public Instrument(String material, String type, String colour, int basePrice, int retailPrice, String sound){
         this.material = material;
         this.type = type;
         this.colour = colour;
         this.basePrice = basePrice;
         this.retailPrice = retailPrice;
+        this.sound = sound;
     }
 
     public String getMaterial() {
