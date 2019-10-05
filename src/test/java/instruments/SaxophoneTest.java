@@ -24,4 +24,9 @@ public class SaxophoneTest {
     public void hasMarkupPrice(){
         assertEquals(100, saxophone.calculateMarkup(), 0.01);
     }
+
+    @Test
+    public void canMakeSound(){
+        assertEquals("phwee", saxophone.play("phwee"));
+    }
 }

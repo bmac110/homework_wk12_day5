@@ -24,4 +24,9 @@ public class PianoTest {
     public void hasMarkupPrice(){
         assertEquals(200, piano.calculateMarkup(), 0.01);
     }
+
+    @Test
+    public void canMakeSound(){
+        assertEquals("ping", piano.play("ping"));
+    }
 }

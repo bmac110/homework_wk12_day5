@@ -2,19 +2,14 @@ package instrumentComponents;
 
 import behaviours.ISell;
 
-public class GuitarString implements ISell {
+public class GuitarString extends InstrumentComponents implements ISell {
 
-    private String type;
-    private int basePrice;
-    private int retailPrice;
 
     public GuitarString(String type, int basePrice, int retailPrice){
-        this.type = type;
-        this.basePrice = basePrice;
-        this.retailPrice = retailPrice;
+        super(type, basePrice, retailPrice);
     }
 
     public double calculateMarkup() {
-        return retailPrice - basePrice;
+        return getRetailPrice() - getBasePrice();
     }
 }
