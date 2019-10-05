@@ -50,11 +50,11 @@ public class Shop {
         stock.remove(stockItem);
     }
 
-//    public ArrayList<ISell> getStock() {
-//        ArrayList<ISell> stock = new ArrayList<ISell>();
-//        stock.addAll(this.instruments);
-//        stock.addAll(this.instrumentParts);
-//        int totalStock = stock.size();
-//        return totalStock;
-//    }
+    public double potentialProfit(){
+        double total = 0;
+        for(ISell item : stock){
+            total += item.calculateMarkup();
+        }
+        return total;
+    }
 }
