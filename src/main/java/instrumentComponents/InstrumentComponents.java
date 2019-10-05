@@ -1,6 +1,8 @@
 package instrumentComponents;
 
-public abstract class InstrumentComponents {
+import behaviours.ISell;
+
+public abstract class InstrumentComponents implements ISell {
 
     private String type;
     private int basePrice;

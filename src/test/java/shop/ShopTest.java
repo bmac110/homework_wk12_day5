@@ -34,4 +34,21 @@ public class ShopTest {
         shop.addInstrumentPart(guitarStrings);
         assertEquals(1, shop.instrumentPartCount());
     }
+
+    @Test
+    public void canGetAllStock(){
+        shop.addInstrument(guitar);
+        shop.addInstrumentPart(guitarStrings);
+        shop.addAllToStock();
+        assertEquals(2, shop.getStock());
+    }
+
+    @Test
+    public void canRemoveStock(){
+        shop.addInstrument(guitar);
+        shop.addInstrumentPart(guitarStrings);
+        shop.addAllToStock();
+        shop.removeItem(guitar);
+        assertEquals(1, shop.getStock());
+    }
 }
