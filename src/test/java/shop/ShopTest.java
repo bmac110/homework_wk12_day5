@@ -3,7 +3,6 @@ package shop;
 import instrumentComponents.GuitarString;
 import instruments.Guitar;
 import instruments.GuitarType;
-import instruments.Instrument;
 import org.junit.Before;
 import org.junit.Test;
 

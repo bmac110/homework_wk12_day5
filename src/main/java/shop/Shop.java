@@ -2,7 +2,6 @@ package shop;
 
 import behaviours.ISell;
 import instrumentComponents.InstrumentComponents;
-import instruments.Guitar;
 import instruments.Instrument;
 
 import java.util.ArrayList;
